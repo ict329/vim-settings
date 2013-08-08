@@ -28,3 +28,9 @@
 [submodule "bundle/vim-virtualenv"]
 	path = bundle/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv.git
+[submodule "bundle/winmanager"]
+	path = bundle/winmanager
+	url = https://github.com/vim-scripts/winmanager--Fox.git
+[submodule "bundle/pyflaks-pathogen"]
+	path = bundle/pyflaks-pathogen
+	url = https://github.com/mitechie/pyflakes-pathogen.git
