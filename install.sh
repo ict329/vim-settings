@@ -2,7 +2,9 @@
 #Your Command Below!!!
 
 #Install ctags,pyflakes 
-HOME="~"
+
+sudo easy_install pyflakes
+
 CUR_DIR=`pwd`
 
 cd $HOME
@@ -54,8 +56,9 @@ git add autoload
 
 echo 'skip to vimrc. you should set it by your self.'
 
-cp $CUR_DIR"/.vim/.vimrc" $HOME/.vimrc
 
+mv $HOME/.vimrc $HOME/.vimrc_bak
+cp $CUR_DIR"/.vimrc" $HOME/.vimrc
 
 echo 'commit you git rep'
 

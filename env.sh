@@ -3,6 +3,7 @@
 sudo easy_install virtualenv
 sudo easy_install virtualenvwrapper
 
+rm -rf $HOME/.virtualenvs
 mkdir $HOME/.virtualenvs
 
 echo "export WORKON_HOME=\$HOME/.virtualenvs" >> $HOME/.bashrc

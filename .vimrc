@@ -66,6 +66,7 @@ set completeopt=menuone,longest,preview
 "winmanager
 let g:winManagerWindowLayout='FileExplorer|TagList'
 nmap wm :WMToggle<cr>
+nmap f :WMToggle<cr>
 
 "pyfakes
 filetype plugin indent on
