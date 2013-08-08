@@ -29,6 +29,7 @@ git submodule add https://github.com/vim-scripts/winmanager--Fox.git bundle/winm
 git submodule add https://github.com/mitechie/pyflakes-pathogen.git bundle/pyflaks-pathogen
 git submodule add https://github.com/vim-scripts/taglist.vim.git bundle/taglist
 git submodule add https://github.com/vim-scripts/minibufexpl.vim.git bundle/minibufexpl
+git submodule add https://github.com/vim-scripts/a.vim.git bundle/a
 
 git submodule init
 git submodule update
