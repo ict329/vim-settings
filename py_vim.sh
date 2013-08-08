@@ -27,6 +27,8 @@ git submodule add https://github.com/ervandew/supertab.git bundle/supertab
 git submodule add https://github.com/jmcantrell/vim-virtualenv.git bundle/vim-virtualenv
 git submodule add https://github.com/vim-scripts/winmanager--Fox.git bundle/winmanager
 git submodule add https://github.com/mitechie/pyflakes-pathogen.git bundle/pyflaks-pathogen
+git submodule add https://github.com/vim-scripts/taglist.vim.git bundle/taglist
+
 git submodule init
 git submodule update
 git submodule foreach git submodule init
