@@ -7,16 +7,28 @@ call pathogen#helptags()                    " load plugin help files
 set number
 set hlsearch
 set incsearch
+set showcmd
+set ruler
+
+nmap = zc
+nmap + zo
+
+nmap s :w<cr>
 
 "tags
 set tags=tags;/
 set autochdir
+nmap t :Tlist<cr>
+
+
 
 
 " code folding
 set foldmethod=indent
 set foldlevel=2
 set foldnestmax=4
+autocmd FileType python setlocal foldmethod=indent
+set foldlevel=99
  
 " indentation
 set autoindent
@@ -57,4 +69,22 @@ nmap wm :WMToggle<cr>
 
 "pyfakes
 filetype plugin indent on
+
+
+""""""""""""""""""""""""""""""  
+" miniBufexplorer Config  
+""""""""""""""""""""""""""""""  
+let g:miniBufExplMapWindowNavArrows = 1  
+let g:miniBufExplMapWindowNavVim = 1  
+let g:miniBufExplMapCTabSwitchWindows = 1  
+let g:miniBufExplMapCTabSwitchBufs = 1   
+let g:miniBufExplModSelTarget = 1  
+  
+"解决FileExplorer窗口变小问题  
+let g:miniBufExplForceSyntaxEnable = 1  
+let g:miniBufExplorerMoreThanOne=2  "
+
+nmap bn :bn<cr>
+nmap bN :bN<cr>
+nmap bw :bw<cr>
 
