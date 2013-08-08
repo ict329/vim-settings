@@ -3,6 +3,7 @@
 
 #Install ctags,pyflakes 
 HOME="~"
+CUR_DIR=`pwd`
 
 cd $HOME
 
@@ -53,12 +54,12 @@ git add autoload
 
 echo 'skip to vimrc. you should set it by your self.'
 
-#ln -s './.vim/.vimrc' $HOME/.vimrc
+cp $CUR_DIR"/.vim/.vimrc" $HOME/.vimrc
+
 
 echo 'commit you git rep'
 
 git commit -m "Initial commit."
-
 
 
 echo 'The shell is from http://rawpackets.com/2011/10/16/configuring-vim-as-a-python-ide/'
