@@ -88,3 +88,6 @@ nmap bn :bn<cr>
 nmap bN :bN<cr>
 nmap bw :bw<cr>
 
+
+"Objective-C 
+let filetype_m='objc' 

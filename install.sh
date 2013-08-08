@@ -15,21 +15,31 @@ echo 'load plugin from git hub'
 cd .vim
 git init
 
+
+#common plugin
 git submodule add https://github.com/andrewle/vim-autoclose.git bundle/vim-autoclose
 git submodule add https://github.com/vim-scripts/Color-Sampler-Pack.git bundle/color-sampler-pack
 git submodule add https://github.com/sjl/gundo.vim.git bundle/gundo
 git submodule add https://github.com/sjbach/lusty.git bundle/lusty
-git submodule add https://github.com/cburroughs/pep8.git bundle/pep8
-git submodule add https://github.com/vim-scripts/pydoc.vim.git bundle/pydoc
 git submodule add https://github.com/tpope/vim-pathogen.git bundle/pathogen
 git submodule add https://github.com/vim-scripts/ScrollColors.git bundle/scrollColors
 git submodule add https://github.com/ervandew/supertab.git bundle/supertab
-git submodule add https://github.com/jmcantrell/vim-virtualenv.git bundle/vim-virtualenv
 git submodule add https://github.com/vim-scripts/winmanager--Fox.git bundle/winmanager
-git submodule add https://github.com/mitechie/pyflakes-pathogen.git bundle/pyflaks-pathogen
 git submodule add https://github.com/vim-scripts/taglist.vim.git bundle/taglist
 git submodule add https://github.com/vim-scripts/minibufexpl.vim.git bundle/minibufexpl
+
+
+#python plugin
+git submodule add https://github.com/vim-scripts/pydoc.vim.git bundle/pydoc
+git submodule add https://github.com/jmcantrell/vim-virtualenv.git bundle/vim-virtualenv
+git submodule add https://github.com/mitechie/pyflakes-pathogen.git bundle/pyflaks-pathogen
+
+#c plugin
 git submodule add https://github.com/vim-scripts/a.vim.git bundle/a
+
+#objective-c plugin
+git submodule add https://github.com/vim-scripts/cocoa.vim.git bundle/cocoa
+
 
 git submodule init
 git submodule update
