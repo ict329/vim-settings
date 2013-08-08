@@ -1,7 +1,7 @@
 #!/bin/bash
 #Your Command Below!!!
 sudo pip install virtualenv
-sudo pip install virtualenvwrapper
+sudo easy_install virtualenvwrapper
 
 mkdir $HOME/.virtualenvs
 
