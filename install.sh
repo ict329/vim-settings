@@ -30,7 +30,7 @@ git submodule add https://github.com/ervandew/supertab.git bundle/supertab
 git submodule add https://github.com/vim-scripts/winmanager--Fox.git bundle/winmanager
 git submodule add https://github.com/vim-scripts/taglist.vim.git bundle/taglist
 git submodule add https://github.com/vim-scripts/minibufexpl.vim.git bundle/minibufexpl
-
+git submodule add https://github.com/vim-scripts/javacomplete.git bundle/javacomplete
 
 #python plugin
 git submodule add https://github.com/vim-scripts/pydoc.vim.git bundle/pydoc

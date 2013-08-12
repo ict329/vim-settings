@@ -1,4 +1,4 @@
-" pathogen
+le" pathogen
 let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
 call pathogen#infect()                      " load everyhting else
 call pathogen#helptags()                    " load plugin help files
@@ -9,6 +9,11 @@ set hlsearch
 set incsearch
 set showcmd
 set ruler
+
+"Select and copy, paste"
+map <C-c> y  
+map <C-X> d  
+map <C-A> <Esc>ggVG 
 
 nmap = zc
 nmap + zo
@@ -27,7 +32,6 @@ nmap t :Tlist<cr>
 set foldmethod=indent
 set foldlevel=2
 set foldnestmax=4
-autocmd FileType python setlocal foldmethod=indent
 set foldlevel=99
  
 " indentation
@@ -48,7 +52,7 @@ filetype plugin indent on   " enables filetype specific plugins
 " colorpack
 "colorscheme vibrantink
 "colorscheme desert
- 
+"colorscheme evening
 " gundo
 nnoremap <F5> :GundoToggle<CR>
  
@@ -59,7 +63,6 @@ set hidden
 let g:pep8_map='<leader>8'
  
 " supertab
-au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
@@ -92,3 +95,14 @@ nmap bw :bw<cr>
 
 "Objective-C 
 let filetype_m='objc' 
+
+
+"common
+source $HOME/.vim/autoload/common.vim
+
+"java
+source $HOME/.vim/autoload/java.vim
+
+"python
+source $HOME/.vim/autoload/python.vim
+

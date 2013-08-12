@@ -46,3 +46,6 @@
 [submodule "bundle/cocoa"]
 	path = bundle/cocoa
 	url = https://github.com/vim-scripts/cocoa.vim.git
+[submodule "bundle/javacomplete"]
+	path = bundle/javacomplete
+	url = https://github.com/vim-scripts/javacomplete.git
